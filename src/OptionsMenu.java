@@ -1,5 +1,3 @@
-import javafx.scene.control.PasswordField;
-
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -40,7 +38,7 @@ public class OptionsMenu extends Account {
 
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Only number allowed.");
         }
     }
 
@@ -64,6 +62,7 @@ public class OptionsMenu extends Account {
                 savingsAccount();
                 break;
             case 3:
+                System.out.println("Exiting the program");
                 break;
             default:
                 System.out.println("Please enter the correct choice.");
